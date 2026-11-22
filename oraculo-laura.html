@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>👁️ El Oráculo de Lau 👁️</title>
+<style>
+:root{color-scheme:dark;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{position:relative;min-height:100vh;background:#0d0f0a;background-image:radial-gradient(ellipse at 50% 0%,rgba(30,61,34,0.55),transparent 58%);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Georgia,serif;color:#e8d898;padding:max(env(safe-area-inset-top),28px) 20px max(env(safe-area-inset-bottom),28px);gap:26px;overflow:hidden;}
+#sf{position:absolute;inset:0;pointer-events:none;}
+.st{position:absolute;border-radius:50%;background:#c8a832;animation:tw var(--d) ease-in-out infinite;animation-delay:var(--dl);}
+@keyframes tw{0%,100%{opacity:var(--a);}50%{opacity:var(--b);}}
+.wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:26px;width:100%;max-width:340px;text-align:center;}
+.hd{display:flex;flex-direction:column;align-items:center;gap:8px;}
+.hd-icon{line-height:0;}
+.hd h1{font-size:24px;font-weight:400;letter-spacing:5px;color:#e8d898;text-transform:uppercase;}
+.hd-line{width:48px;height:1px;background:linear-gradient(90deg,transparent,#5a7a5a,transparent);}
+.hd p{font-size:11px;color:#5a7a5a;letter-spacing:2px;font-style:italic;}
+.da{position:relative;width:160px;height:260px;cursor:pointer;}
+.ds{position:absolute;width:160px;height:260px;border-radius:12px;background:#1e3d22;border:1px solid #2d6b35;}
+.ds1{transform:translate(-6px,-5px) rotate(-2.5deg);opacity:0.5;}
+.ds2{transform:translate(-3px,-2px) rotate(-1deg);opacity:0.75;}
+.cw{position:absolute;top:0;left:0;width:160px;height:260px;perspective:1000px;}
+.card{width:100%;height:100%;transform-style:preserve-3d;transition:transform 0.8s cubic-bezier(.4,0,.2,1);}
+.card.flipped{transform:rotateY(180deg);}
+.cf{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;overflow:hidden;}
+.cb{background:#0e1f12;border:1px solid #2d6b35;}
+.cv{transform:rotateY(180deg);background:#0e1f12;border:1px solid #2d6b35;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;gap:12px;}
+.cvb{position:absolute;inset:8px;border:1px solid #2d6b35;border-radius:8px;pointer-events:none;}
+.cs{line-height:0;display:flex;align-items:center;justify-content:center;}
+.cl{width:32px;height:1px;background:#2d6b35;}
+.ct{font-size:16px;color:#e8d898;font-style:italic;line-height:1.4;text-align:center;padding:0 8px;}
+.cd{width:7px;height:7px;border-radius:50%;}
+.dp{background:#c8a832;box-shadow:0 0 8px #c8a83266;}
+.dn{background:#1e3d22;border:1px solid #5a7a5a;}
+.du{background:#5a7a5a;}
+.instr{font-size:11px;color:#2d6b35;letter-spacing:0.5px;font-style:italic;min-height:16px;}
+.btns{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;max-width:210px;}
+.btn{width:100%;padding:11px 20px;border-radius:8px;font-family:Georgia,serif;font-size:11px;letter-spacing:1.5px;cursor:pointer;transition:all .3s;}
+.bs{background:transparent;border:1px solid #5a7a5a;color:#8a9a7a;}
+.bs:hover{border-color:#e8d898;color:#e8d898;background:#c8a83214;}
+.bp{background:transparent;border:1px solid #c8a832;color:#e8d898;}
+.bp:hover{background:#c8a83222;}
+@keyframes sh{0%{transform:translateX(0) rotate(0);}25%{transform:translateX(-14px) rotate(-3deg);}50%{transform:translateX(14px) rotate(3deg);}75%{transform:translateX(-7px) rotate(-1.5deg);}100%{transform:translateX(0) rotate(0);}}
+.shuffling .cw{animation:sh .5s ease-in-out;}
+</style>
+</head>
+<body>
+<div id="sf"></div>
+<div class="wrap">
+  <div class="hd">
+    <div class="hd-icon"><svg viewBox="0 0 36 36" width="28" height="28" fill="none"><circle cx="18" cy="18" r="8" stroke="#c8a832" stroke-width="1.5"/><line x1="18" y1="3" x2="18" y2="9" stroke="#c8a832" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="27" x2="18" y2="33" stroke="#c8a832" stroke-width="1.5" stroke-linecap="round"/><line x1="3" y1="18" x2="9" y2="18" stroke="#c8a832" stroke-width="1.5" stroke-linecap="round"/><line x1="27" y1="18" x2="33" y2="18" stroke="#c8a832" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="8" x2="11" y2="11" stroke="#8a6e1a" stroke-width="1.2" stroke-linecap="round"/><line x1="28" y1="8" x2="25" y2="11" stroke="#8a6e1a" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="28" x2="11" y2="25" stroke="#8a6e1a" stroke-width="1.2" stroke-linecap="round"/><line x1="28" y1="28" x2="25" y2="25" stroke="#8a6e1a" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+    <h1>El Or&#225;culo</h1>
+    <div class="hd-line"></div>
+    <p>Haz tu pregunta al universo</p>
+  </div>
+  <p class="instr" id="instr">Toca el mazo para descubrir tu respuesta</p>
+  <div class="da" id="da">
+    <div class="ds ds1"></div>
+    <div class="ds ds2"></div>
+    <div class="cw">
+      <div class="card" id="card">
+        <div class="cf cb"><svg viewBox="0 0 160 260" width="160" height="260">
+  <rect x="8" y="8" width="144" height="244" rx="8" fill="none" stroke="#5a7a5a" stroke-width="0.5"/>
+  <rect x="14" y="14" width="132" height="232" rx="6" fill="none" stroke="#2d6b35" stroke-width="0.5"/>
+  <polygon points="22,20 25,24 22,28 19,24" fill="#2d6b35"/>
+  <polygon points="138,20 141,24 138,28 135,24" fill="#2d6b35"/>
+  <polygon points="22,232 25,236 22,240 19,236" fill="#2d6b35"/>
+  <polygon points="138,232 141,236 138,240 135,236" fill="#2d6b35"/>
+  <!-- Eye -->
+  <path d="M 28 108 Q 80 68 132 108 Q 80 148 28 108 Z" fill="none" stroke="#c8a832" stroke-width="1"/>
+  <circle cx="80" cy="108" r="21" fill="none" stroke="#8a6e1a" stroke-width="1"/>
+  <circle cx="80" cy="108" r="14" fill="none" stroke="#2d6b35" stroke-width="0.5"/>
+  <ellipse cx="80" cy="108" rx="9" ry="10" fill="#0d0f0a"/>
+  <circle cx="84" cy="104" r="3" fill="#c8a832" opacity="0.4"/>
+  <line x1="55" y1="84" x2="52" y2="76" stroke="#c8a832" stroke-width="0.5" opacity="0.5"/>
+  <line x1="65" y1="78" x2="63" y2="70" stroke="#c8a832" stroke-width="0.5" opacity="0.5"/>
+  <line x1="80" y1="76" x2="80" y2="68" stroke="#c8a832" stroke-width="0.6" opacity="0.6"/>
+  <line x1="95" y1="78" x2="97" y2="70" stroke="#c8a832" stroke-width="0.5" opacity="0.5"/>
+  <line x1="105" y1="84" x2="108" y2="76" stroke="#c8a832" stroke-width="0.5" opacity="0.5"/>
+  <circle cx="36" cy="58" r="1.5" fill="#c8a832" opacity="0.3"/>
+  <circle cx="124" cy="52" r="1" fill="#c8a832" opacity="0.4"/>
+  <circle cx="40" cy="166" r="1.5" fill="#c8a832" opacity="0.3"/>
+  <circle cx="120" cy="162" r="1" fill="#8a6e1a" opacity="0.5"/>
+  <text x="80" y="196" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#5a7a5a" letter-spacing="2">&#10022; OR&#193;CULO &#10022;</text>
+</svg></div>
+        <div class="cf cv">
+          <div class="cvb"></div>
+          <div class="cs" id="cs"></div>
+          <div class="cl"></div>
+          <div class="ct" id="ct"></div>
+          <div class="cl"></div>
+          <div class="cd" id="cd"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btns">
+    <button class="btn bp" id="br" style="display:none" onclick="reset()">Consultar de nuevo</button>
+    <button class="btn bs" onclick="doShuffle()">&#10022; Barajar &#10022;</button>
+  </div>
+</div>
+<script>
+const c1='#e8d898',c2='#c8a832';
+const cards=[
+  {t:"S\u00ED",c:"pos",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="2" x2="18" y2="34"/><line x1="2" y1="18" x2="34" y2="18"/><line x1="7" y1="7" x2="29" y2="29"/><line x1="29" y1="7" x2="7" y2="29"/><circle cx="18" cy="18" r="3" fill="#c8a832" stroke="none"/></svg>'},
+  {t:"No",c:"neg",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="13" fill="#c8a832" fill-opacity="0.2"/></svg>'},
+  {t:"Tal vez",c:"neu",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 A15 15 0 1 0 24 31 A11 11 0 0 1 24 5Z" fill="#c8a832" fill-opacity="0.18"/></svg>'},
+  {t:"Haz que suceda",c:"pos",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 2 L13 20 L21 20 L13 34" stroke-width="2"/></svg>'},
+  {t:"Escucha a tu intuici\u00F3n",c:"neu",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,5 20.9,14 30.4,14 22.8,19.5 25.6,28.5 18,23 10.4,28.5 13.2,19.5 5.6,14 15.1,14" fill="#c8a832" fill-opacity="0.1"/></svg>'},
+  {t:"Improbable",c:"neg",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5 A15 15 0 1 1 12 31 A11 11 0 0 0 12 5Z" fill="#c8a832" fill-opacity="0.18"/></svg>'},
+  {t:"Esta es la se\u00F1al",c:"pos",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="13"/><path d="M18,5 L25.6,28.5 L5.6,14 L30.4,14 L10.4,28.5 Z"/></svg>'},
+  {t:"Deja ir",c:"neg",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="26" cy="10" r="4"/><line x1="23" y1="13" x2="5" y2="31"/><line x1="21" y1="10" x2="4" y2="23" stroke-width="0.8" opacity="0.5"/></svg>'},
+  {t:"No es el momento adecuado",c:"neg",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="13"/><line x1="18" y1="18" x2="18" y2="8" stroke-width="2"/><line x1="18" y1="18" x2="25" y2="18" stroke-width="1.5"/><circle cx="18" cy="18" r="1.5" fill="#c8a832" stroke="none"/></svg>'},
+  {t:"Vas en la direcci\u00F3n correcta",c:"pos",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="2" x2="18" y2="34"/><path d="M10 7 L10 15 L23 15 L28 11 L23 7 Z" fill="#c8a832" fill-opacity="0.15"/><path d="M26 20 L26 28 L13 28 L8 24 L13 20 Z" fill="#c8a832" fill-opacity="0.1"/></svg>'},
+  {t:"Busca m\u00E1s informaci\u00F3n",c:"neu",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="7"/><line x1="18" y1="3" x2="18" y2="9"/><line x1="18" y1="27" x2="18" y2="33"/><line x1="3" y1="18" x2="9" y2="18"/><line x1="27" y1="18" x2="33" y2="18"/><line x1="8" y1="8" x2="12" y2="12"/><line x1="28" y1="8" x2="24" y2="12"/><line x1="8" y1="28" x2="12" y2="24"/><line x1="28" y1="28" x2="24" y2="24"/></svg>'},
+  {t:"Elige una nueva direcci\u00F3n",c:"neg",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="2" fill="#c8a832" stroke="none"/><line x1="18" y1="16" x2="18" y2="8"/><polygon points="18,3 21,9 15,9" fill="#c8a832" stroke="none"/><text x="18" y="13" text-anchor="middle" dy="0.35em" font-size="5" font-family="serif" fill="#e8d898">N</text><line x1="18" y1="20" x2="18" y2="28"/><polygon points="18,33 21,27 15,27" fill="#e8d898" stroke="none" opacity="0.5"/><text x="18" y="24" text-anchor="middle" dy="0.35em" font-size="4.5" font-family="serif" fill="#e8d898">S</text><line x1="20" y1="18" x2="28" y2="18"/><polygon points="33,18 27,21 27,15" fill="#e8d898" stroke="none" opacity="0.5"/><text x="25" y="13" text-anchor="middle" dy="0.35em" font-size="4.5" font-family="serif" fill="#e8d898">E</text><line x1="16" y1="18" x2="8" y2="18"/><polygon points="3,18 9,21 9,15" fill="#e8d898" stroke="none" opacity="0.5"/><text x="11" y="13" text-anchor="middle" dy="0.35em" font-size="4.5" font-family="serif" fill="#e8d898">W</text></svg>'},
+  {t:"No hay de qu\u00E9 preocuparse",c:"pos",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="12"/><circle cx="18" cy="18" r="7" stroke-width="0.9" opacity="0.5"/><circle cx="18" cy="18" r="2" fill="#c8a832" stroke="none"/></svg>'},
+  {t:"Adelante, es el momento",c:"pos",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="4" x2="31" y2="4"/><line x1="5" y1="32" x2="31" y2="32"/><path d="M7 4 L29 4 L18 18 L29 32 L7 32 L18 18 Z" fill="#c8a832" fill-opacity="0.12"/></svg>'},
+  {t:"Replanté\u00E1telo",c:"neg",i:'<svg viewBox="0 0 36 36" width="30" height="30" fill="none" stroke="#e8d898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="13"/><path d="M18 5 A13 13 0 0 1 18 31 L18 5 Z" fill="#c8a832" fill-opacity="0.22" stroke="none"/></svg>'}
+];
+let deck=[...cards],idx=0,flipped=false;
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}}
+function doShuffle(){if(flipped)return;shuffle(deck);idx=0;const d=document.getElementById('da');d.classList.add('shuffling');setTimeout(()=>d.classList.remove('shuffling'),500);document.getElementById('instr').textContent='Mazo barajado ✦ Toca para descubrir';}
+document.getElementById('da').addEventListener('click',function(){if(flipped)return;const c=deck[idx%deck.length];idx++;document.getElementById('ct').textContent=c.t;document.getElementById('cs').innerHTML=c.i;const d=document.getElementById('cd');d.className='cd '+(c.c==='pos'?'dp':c.c==='neg'?'dn':'du');document.getElementById('card').classList.add('flipped');flipped=true;document.getElementById('br').style.display='block';document.getElementById('instr').textContent='';this.style.cursor='default';});
+function reset(){document.getElementById('card').classList.remove('flipped');flipped=false;document.getElementById('br').style.display='none';document.getElementById('instr').textContent='Toca el mazo para descubrir tu respuesta';document.getElementById('da').style.cursor='pointer';}
+const sf=document.getElementById('sf');for(let i=0;i<55;i++){const el=document.createElement('div');el.className='st';const sz=Math.random()*1.8+0.4;el.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;--d:${2+Math.random()*3}s;--dl:-${Math.random()*4}s;--a:${0.1+Math.random()*0.15};--b:${0.5+Math.random()*0.5};`;sf.appendChild(el);}
+shuffle(deck);
+</script>
+</body>
+</html>
